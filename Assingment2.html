@@ -29,6 +29,8 @@
         }
     </script>
     <style>
+
+
         /* Custom Utilities */
         .glass-card {
             background: rgba(30, 41, 59, 0.5);
@@ -37,12 +39,16 @@
         }
 
         .text-gradient {
-    background: linear-gradient(90deg, #f7e93f, #fb09b4, #9100f8);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    display: inline-block;
-}
+            background: linear-gradient(90deg, #f7e93f, #fb09b4, #9100f8);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            display: inline-block;
+        }
+
+        .premium-gradient {
+            background: linear-gradient(90deg, #f8e74a 0%, #f026b0 50%, #8f00ff 100%);
+        }
 
 
         /* Bento Grid Specifics */
@@ -83,6 +89,8 @@
             max-height: 500px;
             opacity: 1;
         }
+
+        
     </style>
 </head>
 <body class="bg-brand-dark text-white font-sans selection:bg-brand-accent selection:text-white">
@@ -104,7 +112,7 @@
 
             <!-- Subscribe (Right - Desktop) -->
             <div class="hidden lg:block">
-                <a href="#" class="px-7 py-3 rounded-full bg-gradient-to-r from-brand-accent to-brand-secondary text-sm font-bold hover:scale-105 transition-transform shadow-lg shadow-purple-500/20">
+                <a href="#" class="premium-gradient px-7 py-3 rounded-full text-sm font-bold transition-all btn-glow flex items-center">
                     Subscribe <i class="fa-solid fa-chevron-right ml-1 text-[10px]"></i>
                 </a>
             </div>
@@ -121,7 +129,7 @@
             <a href="#about" class="text-lg py-2 border-b border-white/5">About</a>
             <a href="#episodes" class="text-lg py-2 border-b border-white/5">Episodes</a>
             <a href="#host" class="text-lg py-2 border-b border-white/5">Host</a>
-            <a href="#" class="w-full text-center py-4 rounded-xl bg-gradient-to-r from-brand-accent to-brand-secondary font-bold">Subscribe Now</a>
+            <a href="#" class="premium-gradient w-full text-center py-4 rounded-xl from-brand-accent to-brand-secondary font-bold">Subscribe Now</a>
         </div>
     </header>
 
@@ -155,7 +163,7 @@
             </p>
 
             <div class="flex flex-col sm:flex-row items-center justify-center gap-5">
-                <a href="#" class="w-full sm:w-auto flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-brand-accent to-brand-secondary text-white font-bold hover:scale-105 transition-transform shadow-lg shadow-purple-500/30 group">
+                <a href="#" class="premium-gradient w-full sm:w-auto flex items-center justify-center gap-3 px-8 py-4 rounded-full text-white font-bold transition-all btn-glow">
                     <img src="assets/spotify.png" alt="Spotify" class="w-5 h-5">
                     Listen On Spotify
                 </a>
